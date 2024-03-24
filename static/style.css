@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    background-color: black;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 12.5%;
+    background: transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center; 
+    z-index: 100;
+    
+}
+
+.navbar a {
+    position:relative;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+.navbar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background-color: #e4e4e4;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s;
+}
+.navbar a:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 550px;
+    background: url('https://wallpapers.com/images/hd/dark-animals-22uthyk0mg2djig5.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.container .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    padding: 80px;
+    color: #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.content logo{
+    font-size: 30px;
+}
+
+.content h2{
+    font-size: 35px;
+}
+
+.content h2 span{
+    font-size: 30px;
+}
+
+.text-sci h2{
+    font-size: 40px;
+    line-height: 1;
+}
+
+.text-sci h2 span{
+    font-size: 25px;
+}
+
+.text-sci p{
+    font-size: 18px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#e4e4e4;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+section:nth-child(odd) {
+    justify-content: right;
+}
+
+section:nth-child(even) {
+    justify-content: left;
+}
+
+#crop {
+    background-image: url('https://assets.videomaker.com/2021/06/How-to-crop-1-1920x1081.jpg'); 
+    background-repeat: no-repeat;
+    background-position:left;
+    background-size: 620px;
+}
+
+#crop h2{
+    font-size: 25px;
+    text-align:left;
+}
+
+#rotate {
+    background-image: url('https://blog.aspose.com/imaging/rotate-images-in-csharp/images/Rotate-and-Flip-Image.png'); 
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size: 620px;
+}
+
+#rotate h2{
+    font-size: 25px;
+    text-align:left;
+}
+
+#blur {
+    background-image: url('https://beyond2020optometry.ca/wp-content/uploads/2023/04/clear-vs-blurry-vision.jpg'); 
+    background-repeat: no-repeat;
+    background-position:left;
+    background-size: 620px;
+}
+
+#blur h2{
+    font-size: 25px;
+    text-align:left;
+}
+
+#brightness {
+    background-image: url('https://learn.zoner.com/wp-content/uploads/2016/07/header-2.jpg'); 
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size: 620px;
+}
+
+#brightness h2{
+    font-size: 25px;
+    text-align:left;
+}
+
+#clarity {
+    background-image: url('https://p16-capcut-va.ibyteimg.com/tos-maliva-i-6rr7idwo9f-us/1704482256598.656~tplv-6rr7idwo9f-image.image'); 
+    background-repeat: no-repeat;
+    background-position:left;
+    background-size: 620px;
+}
+
+#clarity h2{
+    font-size: 25px;
+    text-align:left;
+}
+
+#grayscale {
+    background-image: url('https://deftpdf.com/storage/uploads/5WO4v9y26yAzbEu3lUVzzbogmXMQDexy8wI1tCAT.jpeg'); 
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size: 620px;
+}
+
+#grayscale h2{
+    font-size: 25px;
+    text-align:left;
+}
+
+button{
+    width: 180px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 12px 0;
+    background: #da3c0c;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
