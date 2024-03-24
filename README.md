@@ -1,1 +1,1 @@
-# DHP---Image-Data-Project-Semester-2-
+The Flask WebApp, users can upload an image and then apply various filters to manipulate the uploaded image. These filters include cropping, rotating, blurring, adjusting brightness, enhancing clarity, and applying grayscale. Once the user applies the desired filters, the modified image is displayed on the website.
