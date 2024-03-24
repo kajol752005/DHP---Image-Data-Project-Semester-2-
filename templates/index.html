@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Photo-Editor |</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/007/030/795/small/photo-camera-line-icon-outline-logo-illustration-linear-pictogram-isolated-on-white-background-vector.jpg" width="200px" alt="logo">
+</head>
+<body>
+    <header class="header">                          <!-- Define a header section -->
+
+        <nav class="navbar">                         <!-- Create a navigation bar -->
+            <a href="#home">Home</a>                 <!-- Link to the home section -->
+            <a href="#crop">Crop</a>                 <!-- Link to the crop section -->
+            <a href="#rotate">Rotate</a>             <!-- Link to the rotate section -->
+            <a href="#blur">Blur</a>                 <!-- Link to the blur section -->
+            <a href="#brightness">Brightness</a>     <!-- Link to the brightness section -->
+            <a href="#clarity">Clarity</a>           <!-- Link to the clarity section -->
+            <a href="#grayscale">Grayscale</a>       <!-- Link to the grayscale section -->
+        </nav>
+    </header>
+
+    <div class="container">                            <!-- Define a container for content -->
+        <div class="content">                           <!-- Define a content section -->
+            <h2 class="logo"><i class='bx bxl-firebase'></i>PicKit<br><span>Photo Editor</span></h2>  <!-- Display the logo and application name -->
+            <div class="text-sci">                      <!-- Define a section for text content -->
+                <h2> Welcome!<br><span>To Our New Website.</span></h2>      <!-- Display a welcome message -->
+
+                <p>Our cutting-edge Flask WebApp allows you to confidently upload your favorite images and apply a diverse range of filters to create stunning transformations with ease.</p>  <!-- Display a description of the application -->
+            </div>
+
+    </div>
+
+    <section id="home"></section>           <!-- Define a section for the home content -->
+    <section id="crop"><ul>Crop<h2><br>PicKit provides you<br>the ease to crop your image.<br>Your one click will crop <br>the image just in few seconds.<br></h2>
+        <a href="{{ url_for('edit', action='crop') }}"><button type="button">Start Editing</button></a></ul></section>
+    <section id="rotate"><ul>Rotate<h2><br>PicKit provides you<br>the ease to rotate your image.<br>Your one click will rotate <br>the image just in few seconds.<br></h2>
+        <a href="{{ url_for('edit', action='rotate') }}"><button type="button">Start Editing</button></a></ul></section>
+    <section id="blur"><ul>Blur<h2><br>PicKit provides you<br>the ease to blur your image.<br>Your one click will blur <br>the image just in few seconds.<br></h2>
+        <a href="{{ url_for('edit', action='blur') }}"><button type="button">Start Editing</button></a></ul></section>
+    <section id="brightness"><ul>Brightness<h2><br>PicKit provides you<br>the ease to brighten your image.<br>Your one click will brighten <br>the image just in few seconds.<br></h2>
+        <a href="{{ url_for('edit', action='brightness') }}"><button type="button">Start Editing</button></a></ul></section>
+    <section id="clarity"><ul>Clarity<h2><br>PicKit provides you the<br> ease to have a <br>clear view of your image.<br>Your one click will clear <br>the blurred image <br>just in few seconds.<br></h2>
+        <a href="{{ url_for('edit', action='clarity') }}"><button type="button">Start Editing</button></a></ul></section>
+    <section id="grayscale"><ul>Grayscale<h2><br>PicKit provides you the <br>ease to grayscale your image.<br>Your one click will convert your <br>image to black and white <br>image just in few seconds.<br></h2>
+        <a href="{{ url_for('edit', action='grayscale') }}"><button type="button">Start Editing</button></a></ul></section>
+
+</body>
+</html>
